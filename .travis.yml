@@ -1,0 +1,6 @@
+language: python
+python:
+    - "3.8"
+inatll: 2pip install -r requirements.txt"
+script:
+- SECRET_KEY="whatever" ./manage.py test

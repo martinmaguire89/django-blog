@@ -1,5 +1,4 @@
 """blog URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -21,7 +20,7 @@ from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', RedirectView.as_view(url='post/')),
-    url(r'posts/', include('posts.urls')),
-    url(r'^media/(?P<path>.*)$', serve, {'document-root': MEDIA_ROOT}),
+    url(r'^$', RedirectView.as_view(url='posts/')),
+    url(r'^posts/', include('posts.urls')),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT})
 ]

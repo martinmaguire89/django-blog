@@ -1,3 +1,4 @@
 *.sqlite3\*n*.pyc
 .theia
 __pycache__/
+env.py

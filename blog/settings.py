@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-fa9b6801-9403-4831-a5bb-089cdec3381f.ws-eu01.gitpod.io',
-                    'localhost']
+                    'localhost', 'blog-test-app-mm.herokuapp.com']
 
 
 # Application definition
